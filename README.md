@@ -17,7 +17,7 @@ El repositorio incluye `.pages.yml` para [Pages CMS](https://app.pagescms.org/) 
 Para activarlo:
 1. Entrar a https://app.pagescms.org/ e iniciar sesión.
 2. Instalar/autorizar la aplicación de GitHub **solo para este repositorio**.
-3. Elegir `axelcruzcv/rosela-miranda-web` y `main`.
+3. Elegir `axelcruzm/rosela-miranda-web` y `main`.
 4. Abrir **Blog de Rosela**; crear una nota con título, slug, fecha, resumen, foto y texto.
 5. Marcar **Mostrar en el blog** cuando la nota esté aprobada y guardar.
 6. GitHub Actions compila `blog/posts.json` y publica artículos en `/blog/<slug>/`.
@@ -27,7 +27,7 @@ Los borradores con `published: false` no salen en la web, **pero su texto seguir
 ## GitHub Pages
 
 `.github/workflows/pages.yml` despliega automáticamente cada commit en `main`. El build de publicaciones ocurre únicamente durante el despliegue; el navegador recibe HTML estático, sin llamadas a GitHub ni bases de datos.
-URL de revisión: https://axelcruzcv.github.io/rosela-miranda-web/
+URL de revisión: https://axelcruzm.github.io/rosela-miranda-web/
 
 ## Experiencia START
 
@@ -74,7 +74,7 @@ Identidad: Instrument Serif + Geist; salvia #898F82 y acentos terracota.
 **Todo el mosaico del Blog, incluyendo las tres notas de ejemplo, está controlado por `blog/posts.json`.** Antes eran tres enlaces codificados manualmente en `blog/index.html` y no podían editarse desde el CMS; esa limitación se eliminó.
 
 - Abrir https://app.pagescms.org/ y acceder con la cuenta de GitHub autorizada para este repositorio.
-- Entrar en `axelcruzcv/rosela-miranda-web` → `main` → **Blog de Rosela · Notas y orden**.
+- Entrar en `axelcruzm/rosela-miranda-web` → `main` → **Blog de Rosela · Notas y orden**.
 - Cada entrada admite título, enlace corto, categoría, resumen, fecha, imagen de portada, segunda imagen, texto enriquecido, visibilidad y **orden de aparición**.
 - El campo **Orden de aparición** controla el mosaico: `1` ocupa el bloque grande, `2` el siguiente, `3` el tercero; números menores aparecen primero. Guardar publica un commit y GitHub Pages recompila la web.
 - Las tres notas iniciales están marcadas como **NOTA DE MUESTRA**; Rosela puede editar su contenido o desactivar su publicación.
